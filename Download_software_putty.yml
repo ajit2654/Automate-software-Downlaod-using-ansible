@@ -1,0 +1,11 @@
+---
+ - hosts: localhost #host
+   user: ajit 
+   tasks: 
+   - name: install putty and rufus         
+     get_url: url={{item}} dest=/home/ajit/    #copy url from google and paste below as given in with_items
+     with_items:
+       - https://the.earth.li/~sgtatham/putty/latest/putty-0.71.tar.gz
+       - https://github.com/pbatard/rufus/releases/download/v3.5/rufus-3.5p.exe
+   - name: install
+     debug: msg="Both software has been installed"
