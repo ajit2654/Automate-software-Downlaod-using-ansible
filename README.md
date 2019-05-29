@@ -1,5 +1,5 @@
 # Automate-software-Downlaod-using-ansible
-This is a simple ansible-playbook to learning purpose.
+This is a simple ansible-playbook for learning purpose.
 We can automate download of multiple software using this playbook.
 As like you can install putty,rufus,vmware,wireshark,whatapps in windows as well as in linux.
 I have used get_url module to fetch downloadable link from google or particular software and also work multiple software.
